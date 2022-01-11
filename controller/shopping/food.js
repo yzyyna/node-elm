@@ -308,6 +308,7 @@ class Food extends BaseComponent{
 		return [specfoods, specifications]
 	}
 	async getMenu(req, res, next){
+		console.log(`lp:server /shopping/v2/menu`,req.query)
 		const restaurant_id = req.query.restaurant_id;
 		const allMenu = req.query.allMenu;
 		if (!restaurant_id || !Number(restaurant_id)) {

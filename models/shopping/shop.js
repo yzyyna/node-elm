@@ -2,6 +2,11 @@
 
 import mongoose from 'mongoose'
 
+// 第一个参数是跟 model 对应的集合（ collection ）名字的 单数 形式。 
+// Mongoose 会自动找到名称是 model 名字 复数 形式的 collection 。 
+// 对于上例，Tank 这个 model 就对应数据库中 tanks 这个 collection。
+// .model() 这个函数是对 schema 做了拷贝（生成了 model）。 
+// 你要确保在调用 .model() 之前把所有需要的东西都加进 schema 里了！
 const shopSchema = new mongoose.Schema({
 	activities: [{
 		description: String,

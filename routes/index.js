@@ -18,6 +18,7 @@ export default app => {
 	// app.get('/', (req, res, next) => {
 	// 	res.redirect('/');
 	// });
+	console.log(`lp:server proxy config(express.use())...`)
 	app.use('/v1', v1);
 	app.use('/v2', v2);
 	app.use('/v3', v3);

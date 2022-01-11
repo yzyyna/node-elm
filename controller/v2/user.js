@@ -93,6 +93,7 @@ class User extends AddressComponent {
 		})
 	}
 	async getInfo(req, res, next){
+		console.log(`lp:server /v1/user`,req.query,req.session)
 		const sid = req.session.user_id;
 		const qid = req.query.user_id;
 		const user_id = sid || qid;

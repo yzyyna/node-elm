@@ -92,6 +92,7 @@ class CityHandle extends AddressComponent{
 		}
 	}
 	async pois(req, res, next){
+		console.log('lp:server /v2/pois/',req.params)
 		try{
 			const geohash = req.params.geohash || '';
 			if (geohash.indexOf(',') == -1) {

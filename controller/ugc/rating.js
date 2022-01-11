@@ -21,6 +21,7 @@ class Rating {
 		}
 	}
 	async getRatings(req, res, next){
+		console.log(`lp:server /ugc/v2/restaurants/3269/ratings`,req.params)
 		const restaurant_id = req.params.restaurant_id;
 		if (!restaurant_id || !Number(restaurant_id)) {
 			res.send({
@@ -43,6 +44,7 @@ class Rating {
 		}
 	}
 	async getScores(req, res, next){
+		console.log(`lp:server /ugc/v2/restaurants/3269/ratings/scores`,req.params)
 		const restaurant_id = req.params.restaurant_id;
 		if (!restaurant_id || !Number(restaurant_id)) {
 			res.send({
@@ -65,6 +67,7 @@ class Rating {
 		}
 	}
 	async getTags(req, res, next){
+		console.log(`lp:server /ugc/v2/restaurants/3269/ratings/tags`,req.params)
 		const restaurant_id = req.params.restaurant_id;
 		if (!restaurant_id || !Number(restaurant_id)) {
 			res.send({
