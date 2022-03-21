@@ -4,6 +4,7 @@ import v1 from './v1'
 import v2 from './v2'
 import v3 from './v3'
 import v4 from './v4'
+import vTest from './vTest';
 import ugc from './ugc'
 import bos from './bos'
 import eus from './eus'
@@ -23,6 +24,7 @@ export default app => {
 	app.use('/v2', v2);
 	app.use('/v3', v3);
 	app.use('/v4', v4);
+	app.use('/vtest', vTest);
 	app.use('/ugc', ugc);
 	app.use('/bos', bos);
 	app.use('/eus', eus);
